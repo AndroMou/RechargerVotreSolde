@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/langChooser"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp"
+    android:paddingBottom="@dimen/_30sdp" >
+
+    <TextView
+        android:id="@+id/txtlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="الشبكة"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnMaroTelecom"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/b_lang_translate"
+                android:layout_margin="@dimen/_4sdp"
+                android:textColor="#FF3300"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:onClick="onSendMessage"
+                android:text="Maroc Telecom" />
+
+            <Button
+                android:id="@+id/btnInwi"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/b_lang_translate"
+                android:layout_margin="@dimen/_4sdp"
+                android:textColor="#E500F8"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:onClick="onSendMessage"
+                android:text="Inwi" />
+
+            <Button
+                android:id="@+id/btnOrange"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/b_lang_translate"
+                android:layout_margin="@dimen/_4sdp"
+                android:textStyle="bold"
+                android:textColor="#FF9D00"
+                android:textSize="20sp"
+                android:onClick="onSendMessage"
+                android:text="Orange" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/langChooser"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_30sdp"
+    android:paddingRight="@dimen/_30sdp"
+    android:paddingBottom="@dimen/_30sdp" >
+
+    <TextView
+        android:id="@+id/txtlang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/choisissez_l_offre" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEtoile1"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*1"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile2"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*2"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile3"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*3"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile4"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*4"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile5"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*5"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile6"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*6"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile7"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*7"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile8"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*8"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile9"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*9"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnEtoile22"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onArabic"
+                    android:text="*22"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recharger Votre Solde</string>
+    <string name = "txt_m_ore"> أخبرنا برأيك في هذا التطبيق في التعليقات </string>
+    <string name="choisissez_l_offre">إختر العرض</string>
+    <string name="numbre_taabia">هذا ليس رمز التعبئة.!!</string>
+
+
+</resources>

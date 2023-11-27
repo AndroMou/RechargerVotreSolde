@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop Shadow Stack -->
+
+
+    <stroke android:width="1.5dp" android:color="#1089ff" />
+    <padding android:left="10dp" android:top="3dp"
+        android:right="10dp" android:bottom="3dp"
+        />
+
+    <solid android:color="#23374d"/>
+
+
+</shape>

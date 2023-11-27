@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent" >
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-5963817566033623/3115143888" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:onClick="onPickImage" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvwebView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_green"
+                            android:layout_weight="1"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                        <Button
+                            android:id="@+id/btn_etoile"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:text="*"
+                            android:textSize="30sp"
+                            android:textColor="@color/colorAccent"
+                            android:background="@drawable/btns_etoiler"
+                            android:onClick="onAddStar"/>
+                    </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutIam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMaroTelecom"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/b_local_play"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:textColor="#FF3300"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:onClick="onSendMessage"
+                        android:text="Maroc Telecom" />
+
+                    <Button
+                        android:id="@+id/btnInwi"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/b_local_play"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:textColor="#E500F8"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:visibility="gone"
+                        android:onClick="onSendMessage"
+                        android:text="Inwi" />
+
+                    <Button
+                        android:id="@+id/btnOrange"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/b_local_play"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:textStyle="bold"
+                        android:textColor="#FF9D00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:onClick="onSendMessage"
+                        android:text="Orange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/_2sdp" >
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp" />
+            <TextView
+                android:id="@+id/textViewUtile"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:onClick="onClickShare"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="@string/textview_utile"
+                android:layout_height="@dimen/_30sdp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center"
+            android:background="#9600bb"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:visibility="gone"
+                android:background="@drawable/btns_save"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnCopy"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_btn_copy_pressed"
+                    android:onClick="onClickShare" />
+            </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btnEnvoyer"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Envoyer"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/b_lang_translate"
+                    android:onClick="onClickPlay" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/btns_share"
+                    android:onClick="onClickShare" />
+
+            <Button
+                android:id="@+id/btnCopier"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/btns_copy"
+                android:onClick="onClickCopy" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
